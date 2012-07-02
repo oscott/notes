@@ -6,7 +6,7 @@ author_twitter: _mql
 author: Michael Aufreiter
 categories:
 - articles
-published: true
+published: false
 ---
 
 
@@ -32,6 +32,7 @@ If your page lives under `http://username.github.com/sitename` your config.yml l
 Once your site is up you can start managing it with [Prose](http://prose.io). Follow the instructions [here](http://prose.io/help/getting-started.html).
 
 ![](http://prose.io/images/screenshots/edit.png)
+
 
 
 
