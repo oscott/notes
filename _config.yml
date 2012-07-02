@@ -12,9 +12,9 @@ prose:
     _posts/articles:
       published: false
       layout: article
-      title: Your Post Title
-      abstract: Short summary of your article.
-      author_twitter: johndoe
-      author: John Doe
+      title: Post Title
+      abstract: Short summary of article.
+      author_twitter: digitisation
+      author: Oliver Scott
       categories:
       - articles
