@@ -1,35 +1,6 @@
 ---
 layout: default
 ---
-
-The Latest:</br>
-  <div class="qukpad"> 
-  {% for item in site.categories.articles limit:1 offset:0 %}
-    <div class="article-wrapper">
-      <div class="help post-content">
-        {{ item.content }}
-      </div>
-    </div>
-
-    <div class="metata">Small print:{{item.title}} | About:{{item.abstract}} | Posted by: <a href="http://twitter.com/{{item.author_twitter}}">{{item.author}}</a> on {{ item.date | date: "%B %d, %Y" }}
-    </div>
-  {% endfor %}
-</div>
-</br>
-<div class="article-navigation">
-  The Past:</br>
-  <div class="qukpad"> 
-    {% for item in site.categories.articles limit:40 offset:1 %}
-      <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-        <div class="title">{{item.title}}</div>
-      </a>
-    {% endfor %}
-  </div>  
-</div>
-
-
-----------------
-
 <div class="article-navigation">
   {% for item in site.categories.articles limit:40 offset:0 %}
     <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
