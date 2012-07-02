@@ -27,3 +27,6 @@ prose:
       img:  Project Thumbnail
       categories:
       - projects
+      tags:
+      - sound
+      - web
