@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-
+head
 <div class="article-navigation">
   {% for item in site.categories.articles limit:40 offset:0 %}
     <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-      
+      <div class="title">{{item.title}}</div>
     </a>
   {% endfor %}
 </div>
-
+/head
+body
 {% for item in site.categories.articles limit:1 offset:0 %}
   <div class="intro">
     <div class="title">{{item.title}}</div>
@@ -24,3 +25,5 @@ layout: default
   </div>
 {% endfor %}
 
+/body
+foot
