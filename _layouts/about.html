@@ -9,9 +9,9 @@ layout: default
 <div>{{page.name}}</div>
 <div>{{page.img}}</div>
 <div>{{page.categories}}</div>
-  {% for item in site.tags limit:40 offset:0 %}
+  {% for item in page.tags limit:40 offset:0 %}
     <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-      boo
+      boo {{item}}
     </a>
   {% endfor %}
 <div>{{page.tags}}</div>
@@ -20,7 +20,7 @@ layout: default
     <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
       {{item.tag}}{{item.tags}}boo
     </a>
-  {% endfor %}
+  
 
     <div class="span4">
     <h4>Published</h4>
@@ -41,3 +41,4 @@ layout: default
     </ul>
   </div>
 </div>
+{% endfor %}
