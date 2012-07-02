@@ -11,36 +11,8 @@ layout: default
 <div>{{page.categories}}</div>
   {% for item in page.tags limit:40 offset:0 %}
     <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-      boo {{item}} --
+      {{item}}
     </a>
-        {{# page.tags?to_tags }}
-      {{> tags_list }}
-    {{/ page.tags?to_tags }}
   {% endfor %}
 <div>{{page.tags}}</div>
 
-  {% for item in site.tags.project limit:40 offset:0 %}
-    <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-      {{item.tag}}{{item.tags}}boo
-    </a>
-  {% endfor %}
-
-    <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date }}</span></div>
-    <br>
-    <h4>Categories</h4>
-    <ul class="tag_box">
-    {{# page.categories?to_categories }}
-      {{> categories_list }}
-    {{/ page.categories?to_categories }}
-    </ul>
-    <br>
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {{# page.tags?to_tags }}
-      {{> tags_list }}
-    {{/ page.tags?to_tags }}
-    </ul>
-  </div>
-</div>
