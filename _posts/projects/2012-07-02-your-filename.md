@@ -1,6 +1,6 @@
 ---
 published: true
-layout: article
+layout: about
 title: 'Post Title'
 abstract: 'Short summary of article.'
 name: 'Project Name'
