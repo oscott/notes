@@ -2,18 +2,19 @@
 layout: default
 ---
 
-The Latest:</br> 
-{% for item in site.categories.articles limit:1 offset:0 %}
-  <div class="article-wrapper">
-    <div class="help post-content">
-      {{ item.content }}
+The Latest:</br>
+  <div style="padding-left:30px"> 
+  {% for item in site.categories.articles limit:1 offset:0 %}
+    <div class="article-wrapper">
+      <div class="help post-content">
+        {{ item.content }}
+      </div>
     </div>
-  </div>
 
-  <div class="metata">Small print:{{item.title}} | About:{{item.abstract}} | Posted by: <a href="http://twitter.com/{{item.author_twitter}}">{{item.author}}</a> on {{ item.date | date: "%B %d, %Y" }}
-  </div>
-{% endfor %}
-
+    <div class="metata">Small print:{{item.title}} | About:{{item.abstract}} | Posted by: <a href="http://twitter.com/{{item.author_twitter}}">{{item.author}}</a> on {{ item.date | date: "%B %d, %Y" }}
+    </div>
+  {% endfor %}
+</div>
 <div class="article-navigation">
 The Past:</br>
   {% for item in site.categories.articles limit:40 offset:1 %}
