@@ -18,3 +18,12 @@ prose:
       author: Oliver Scott
       categories:
       - articles
+    _posts/projects:
+      published: false
+      layout: article
+      title: Post Title
+      abstract: Short summary of article.
+      name: "Project Name"
+      img:  "Project Thumbnail"
+      categories:
+      - projects
